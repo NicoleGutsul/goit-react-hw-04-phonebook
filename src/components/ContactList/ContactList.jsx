@@ -1,7 +1,9 @@
 import propTypes from 'prop-types';
 import ContactItem from "components/ContactItem";
+
 const ContactList = ({ contacts, onDeleteContact }) => (
-    <ul>{contacts.map(({ id, name, number }) => (
+    <ul>
+      {contacts.map(({ id, name, number }) => (
         <ContactItem 
           key={id}
           id={id}
@@ -11,7 +13,7 @@ const ContactList = ({ contacts, onDeleteContact }) => (
         />
            
        
-    ))}
+      ))}
     </ul>
     
 );
